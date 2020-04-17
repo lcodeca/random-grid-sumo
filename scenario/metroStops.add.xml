@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu 13 Feb 2020 14:10:56 GMT by Eclipse SUMO netedit Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="random.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="random.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="true"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/codeca/Workspace/Infrastructure/rl-docker-image/shared-folder/rllib-sumo-infrastructure/scenarios/ExtendedRandomGrid/scenario/metroOrange.stops.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- ORANGE LINE WESTBOUND-->
+    <busStop id="busStop_-gneE2_0_1" lane="-gneE2_0" startPos="893.00" endPos="1003.00" name="orange-1" friendlyPos="1" lines="orage-west">
+        <access lane="4817_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE2_0_2" lane="-gneE2_0" startPos="359.00" endPos="469.00" name="orange-2" friendlyPos="1" lines="orange-west">
+        <access lane="4274_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE3_0_4" lane="-gneE3_0" startPos="332.00" endPos="452.00" name="orange-3" friendlyPos="1" lines="orange-west">
+        <access lane="-4809_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE7_0_6" lane="-gneE7_0" startPos="2181.00" endPos="2471.00" name="orange-4" friendlyPos="1" lines="orange-west">
+        <access lane="42_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE7_0_8" lane="-gneE7_0" startPos="1660.00" endPos="1770.00" name="orange-5" friendlyPos="1" lines="orange-west">
+        <access lane="-19_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE7_0_10" lane="-gneE7_0" startPos="1188.00" endPos="1298.00" name="orange-6" friendlyPos="1" lines="orange-west">
+        <access lane="-781_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE7_0_12" lane="-gneE7_0" startPos="467.00" endPos="577.00" name="orange-7" friendlyPos="1" lines="orange-west">
+        <access lane="-5514_0" pos="100.00"/>
+    </busStop>
+    <!-- ORANGE LINE SOUTBOUND-->
+    <busStop id="busStop_gneE2_0_0" lane="gneE2_0" startPos="592.00" endPos="702.00" name="orange-1" friendlyPos="1" lines="orange-south">
+        <access lane="4817_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE2_0_3" lane="gneE2_0" startPos="1058.00" endPos="1168.00" name="orange-2" friendlyPos="1" lines="orange-south">
+        <access lane="4274_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE3_0_5" lane="gneE3_0" startPos="138.00" endPos="268.00" name="orange-3" friendlyPos="1" lines="orange-south">
+        <access lane="-4809_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE7_0_7" lane="gneE7_0" startPos="83.00" endPos="193.00" name="orange-4" friendlyPos="1" lines="orange-south">
+        <access lane="42_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE7_0_9" lane="gneE7_0" startPos="558.00" endPos="668.00" name="orange-5" friendlyPos="1" lines="orange-south">
+        <access lane="-19_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE7_0_11" lane="gneE7_0" startPos="1083.00" endPos="1193.00" name="orange-6" friendlyPos="1" lines="orange-south">
+        <access lane="-781_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE7_0_13" lane="gneE7_0" startPos="1756.00" endPos="1866.00" name="orange-7" friendlyPos="1" lines="orange-south">
+        <access lane="-5514_0" pos="100.00"/>
+    </busStop>
+    <!-- BLUE LINE WESTBOUND-->
+    <busStop id="busStop_-gneE12_0_0" lane="-gneE12_0" startPos="1775.00" endPos="1885.00" name="blue-1" friendlyPos="1" lines="blue-west">
+        <access lane="-5272_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE12_0_2" lane="-gneE12_0" startPos="1363.00" endPos="1473.00" name="blue-2" friendlyPos="1" lines="blue-west">
+        <access lane="5620_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE12_0_4" lane="-gneE12_0" startPos="954.00" endPos="1064.00" name="blue-3" friendlyPos="1" lines="blue-west">
+        <access lane="-1132_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_-gneE12_0_6" lane="-gneE12_0" startPos="369.00" endPos="479.00" name="blue-4" friendlyPos="1" lines="blue-west">
+        <access lane="-781_0" pos="100.00"/>
+    </busStop>    
+    <busStop id="busStop_-gneE13_0_8" lane="-gneE13_0" startPos="471.00" endPos="581.00" name="blue-5" friendlyPos="1" lines="blue-west">
+        <access lane="1022_0" pos="100.00"/>
+    </busStop>    
+    <busStop id="busStop_-gneE13_0_10" lane="-gneE13_0" startPos="10.00" endPos="120.00" name="blue-6" friendlyPos="1" lines="blue-west">
+        <access lane="2739_0" pos="100.00"/>
+    </busStop>    
+    <busStop id="busStop_-gneE14_0_12" lane="-gneE14_0" startPos="1472.00" endPos="1582.00" name="blue-7" friendlyPos="1" lines="blue-west">
+        <access lane="-2346_0" pos="100.00"/>
+    </busStop>    
+    <busStop id="busStop_-gneE14_0_14" lane="-gneE14_0" startPos="852.00" endPos="962.00" name="blue-8" friendlyPos="1" lines="blue-west">
+        <access lane="3191_0" pos="100.00"/>
+    </busStop>    
+    <busStop id="busStop_-gneE14_0_16" lane="-gneE14_0" startPos="257.00" endPos="367.00" name="blue-9" friendlyPos="1" lines="blue-west">
+        <access lane="5791_0" pos="100.00"/>
+    </busStop>    
+    <!-- BLUE LINE NORTHBOUND-->
+    <busStop id="busStop_gneE12_0_1" lane="gneE12_0" startPos="40.00" endPos="150.0" name="blue-1" friendlyPos="1" lines="blue-north">
+        <access lane="-5272_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE12_0_3" lane="gneE12_0" startPos="459.00" endPos="569.00" name="blue-2" friendlyPos="1" lines="blue-north">
+        <access lane="5620_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE12_0_5" lane="gneE12_0" startPos="866.00" endPos="976.00" name="blue-3" friendlyPos="1" lines="blue-north">
+        <access lane="-1132_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE12_0_7" lane="gneE12_0" startPos="1469.00" endPos="1579.00" name="blue-4" friendlyPos="1" lines="blue-north">
+        <access lane="-781_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE13_0_9" lane="gneE13_0" startPos="10.00" endPos="120.00" name="blue-5" friendlyPos="1" lines="blue-north">
+        <access lane="1022_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE13_0_11" lane="gneE13_0" startPos="492.00" endPos="602.00" name="blue-6" friendlyPos="1" lines="blue-north">
+        <access lane="2739_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE14_0_13" lane="gneE14_0" startPos="346.00" endPos="456.00" name="blue-7" friendlyPos="1" lines="blue-north">
+        <access lane="-2346_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE14_0_15" lane="gneE14_0" startPos="962.00" endPos="1072.00" name="blue-8" friendlyPos="1" lines="blue-north">
+        <access lane="3191_0" pos="100.00"/>
+    </busStop>
+    <busStop id="busStop_gneE14_0_17" lane="gneE14_0" startPos="1560.00" endPos="1670.00" name="blue-9" friendlyPos="1" lines="blue-north">
+        <access lane="5791_0" pos="100.00"/>
+    </busStop>
+    
+</additional>

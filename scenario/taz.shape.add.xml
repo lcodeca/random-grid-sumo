@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Thu 13 Feb 2020 12:29:04 GMT by Eclipse SUMO netedit Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/codeca/Workspace/Infrastructure/rl-docker-image/shared-folder/rllib-sumo-infrastructure/scenarios/ExtendedRandomGrid/scenario/random.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/codeca/Workspace/Infrastructure/rl-docker-image/shared-folder/rllib-sumo-infrastructure/scenarios/ExtendedRandomGrid/scenario/random.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="true"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="/home/codeca/Workspace/Infrastructure/rl-docker-image/shared-folder/rllib-sumo-infrastructure/scenarios/ExtendedRandomGrid/scenario/taz.shape.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <taz id="complete" shape="-146.630000,1935.150000 -142.510000,2462.520000 524.940000,3138.210000 1324.230000,3286.540000 2584.980000,3838.630000 3182.390000,3406.020000 4043.480000,2017.550000 3149.430000,884.530000 2119.410000,-339.130000 813.340000,686.770000 -142.510000,1926.910000 -146.630000,1935.150000"/>
+</additional>

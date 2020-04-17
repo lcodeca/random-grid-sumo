@@ -1,0 +1,139 @@
+{
+    "seed": 30126381,
+    "maxNumTry": 50,
+    "outputPrefix": "rou/saga",
+    "mergeRoutesFiles": true,
+
+    "sumocfg": "duarouter.cfg",
+
+    "SUMOnetFile": "random.net.xml",
+    "SUMOadditionals": {
+        "vTypes": "basic.vType.xml",
+        "parkings": "parkingArea.add.xml"
+    },
+
+    "intermodalOptions": {
+        "parkingAreaBlacklist": [],
+        "modeSelection": "PROBABILITY",
+        "vehicleAllowedParking": ["passenger", "ptw", "commercial"]
+    },
+
+    "population": {
+        "entities" : 20000,
+        "tazDefinition": "complete.taz.xml",
+        "tazWeights": "complete.taz.weight.csv",
+        "buildingsWeight": "buildings/",
+        "PoIsDefinition": "TBD"
+    },
+
+    "taz": {
+        "Complete": ["1"]
+    },
+
+    "activities": {
+        "P-Day": {
+            "duration": {
+                "m": 28800,
+                "s": 3600
+            },
+            "start": {
+                "m": 27000,
+                "s": 7200
+            }
+        },
+        "P-Morning": {
+            "duration": {
+                "m": 14400,
+                "s": 3600
+            },
+            "start": {
+                "m": 27000,
+                "s": 7200
+            }
+        },
+        "P-Afternoon": {
+            "duration": {
+                "m": 14400,
+                "s": 3600
+            },
+            "start": {
+                "m": 50400,
+                "s": 3600
+            }
+        },
+        "S-Short": {
+            "duration": {
+                "m": 7200,
+                "s": 3600
+            },
+            "start": {}
+        },
+        "S-Long": {
+            "duration": {
+                "m": 14400,
+                "s": 3600
+            },
+            "start": {}
+        },
+        "Home": {
+            "duration": {
+                "m": 3600,
+                "s": 1800
+            },
+            "start": {}
+        }
+    },
+
+    "slices": {
+        "default": {
+            "perc": 1.0,
+            "loc_origin": "Complete",
+            "loc_primary": "Complete",
+            "activityChains": [
+                [0.1,
+                    ["Home", "P-Day", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "P-Morning", "Home", "P-Afternoon", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "P-Day", "S-Short", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "P-Day", "Home", "S-Short", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "P-Morning", "S-Short", "P-Afternoon", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "P-Morning", "S-Short", "P-Afternoon", "S-Short", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "P-Morning", "S-Long", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "P-Morning", "S-Long", "Home", "S-Short", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "S-Long", "P-Afternoon", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ],
+                [0.1,
+                    ["Home", "S-Long", "P-Afternoon", "Home", "S-Short", "Home"],
+                    [["public", 0.25], ["passenger", 0.25], ["ptw", 0.25], ["commercial", 0.25]]
+                ]
+            ]
+        }
+    },
+
+    "minEdgeAllowed": 30.0,
+    "stopBufferDistance": 20.0
+}

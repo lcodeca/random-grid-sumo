@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route id="orange:westbound" edges="-gneE7 -gneE3 -gneE2">
+        <stop busStop="busStop_-gneE7_0_12" duration="30.00" until="93.00"/> <!-- until="0.00"-->
+        <stop busStop="busStop_-gneE7_0_10" duration="30.00" until="206.00"/>
+        <stop busStop="busStop_-gneE7_0_8" duration="30.00" until="304.00"/>
+        <stop busStop="busStop_-gneE7_0_6" duration="30.00" until="405.00"/>
+        <stop busStop="busStop_-gneE3_0_4" duration="30.00" until="503.00"/>
+        <stop busStop="busStop_-gneE2_0_2" duration="30.00" until="608.00"/>
+        <stop busStop="busStop_-gneE2_0_1" duration="30.00" until="710.00"/>
+    </route>
+    <flow id="orange:westbound" type="metro" route="orange:westbound" begin="0.0" end="86400.0" period="300" line="orange-west" >
+        <param key="name" value="MetroOrange-WestBound"/>
+    </flow>
+
+    <route id="orange:southbound" edges="gneE2 gneE3 gneE7">
+        <stop busStop="busStop_gneE2_0_0" duration="30.00" until="102.00"/> <!-- until="0.00"-->
+        <stop busStop="busStop_gneE2_0_3" duration="30.00" until="199.00"/>
+        <stop busStop="busStop_gneE3_0_5" duration="30.00" until="304.00"/>
+        <stop busStop="busStop_gneE7_0_7" duration="30.00" until="404.00"/>
+        <stop busStop="busStop_gneE7_0_9" duration="30.00" until="502.00"/>
+        <stop busStop="busStop_gneE7_0_11" duration="30.00" until="603.00"/>
+        <stop busStop="busStop_gneE7_0_13" duration="30.00" until="714.00"/>
+    </route>
+    <flow id="orange:southbound" type="metro" route="orange:southbound" begin="0.0" end="86400.0" period="300" line="orange-south" >
+        <param key="name" value="MetroOrange-SouthBound"/>
+    </flow>
+
+    <route id="blue:northbound" edges="gneE12 gneE13 gneE14">
+        <stop busStop="busStop_gneE12_0_1" duration="30.00" until="103.00"/> <!-- until="0.00"-->
+        <stop busStop="busStop_gneE12_0_3" duration="30.00" until="200.00"/>
+        <stop busStop="busStop_gneE12_0_5" duration="30.00" until="305.00"/>
+        <stop busStop="busStop_gneE12_0_7" duration="30.00" until="405.00"/>
+        <stop busStop="busStop_gneE13_0_9" duration="30.00" until="503.00"/>
+        <stop busStop="busStop_gneE13_0_11" duration="30.00" until="604.00"/>
+        <stop busStop="busStop_gneE14_0_13" duration="30.00" until="715.00"/>
+        <stop busStop="busStop_gneE14_0_15" duration="30.00" until="786.00"/>
+        <stop busStop="busStop_gneE14_0_17" duration="30.00" until="857.00"/>
+    </route>
+    <flow id="blue:northbound" type="metro" route="blue:northbound" begin="0.0" end="86400.0" period="300" line="blue-north" >
+        <param key="name" value="MetroBlue-NorthBound"/>
+    </flow>
+
+    <route id="blue:westbound" edges="-gneE14 -gneE13 -gneE12">
+        <stop busStop="busStop_-gneE14_0_16" duration="30.00" until="103.00"/> <!-- until="0.00"-->
+        <stop busStop="busStop_-gneE14_0_14" duration="30.00" until="200.00"/>
+        <stop busStop="busStop_-gneE14_0_12" duration="30.00" until="305.00"/>
+        <stop busStop="busStop_-gneE13_0_10" duration="30.00" until="405.00"/>
+        <stop busStop="busStop_-gneE13_0_8" duration="30.00" until="503.00"/>
+        <stop busStop="busStop_-gneE12_0_6" duration="30.00" until="604.00"/>
+        <stop busStop="busStop_-gneE12_0_4" duration="30.00" until="715.00"/>
+        <stop busStop="busStop_-gneE12_0_2" duration="30.00" until="779.00"/>
+        <stop busStop="busStop_-gneE12_0_0" duration="30.00" until="843.00"/>
+    </route>
+    <flow id="blue:westbound" type="metro" route="blue:westbound" begin="0.0" end="86400.0" period="300" line="blue-west" >
+        <param key="name" value="MetroBlue-WestBound"/>
+    </flow>
+</routes>
