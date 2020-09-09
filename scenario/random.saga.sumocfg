@@ -16,6 +16,7 @@
 
     <output>
         <output-prefix value='saga.output.'/>
+        <person-summary-output value="person.summary.xml"/>
         <summary-output value="summary.xml"/>
         <tripinfo-output value="tripinfo.xml"/>
         <tripinfo-output.write-unfinished value="false"/>
